@@ -49,15 +49,15 @@ print(f"📝 Writing Article: {title}")
 # ==========================================
 print("Prompting GPT-4o for content...")
 prompt = f"""
-You are an expert B2B eCommerce writer. Write a GEO-optimized blog post based on this title: "{title}".
+You are an expert B2B eCommerce writer. Write a highly professional, GEO-optimized blog post based on this title: "{title}".
 Topic Context: {topic_summary}
 
 STRICT GEO/SEO RULES:
 1. Do not include the H1 title in the body (Shopify does this automatically).
 2. Start immediately with a "Bottom Line Up Front" (BLUF) paragraph (40-80 words directly answering the title).
 3. Use semantic HTML (<h2>, <h3>, <p>, <ul>, <strong>). Format subheadings as questions where relevant.
-4. Add a short FAQ widget at the very bottom using <h3> tags for the questions.
-5. Keep the tone authoritative, professional, and B2B-focused.
+4. Add a comprehensive FAQ widget at the very bottom using <h3> tags for the questions. You MUST generate exactly 6 to 8 Frequently Asked Questions.
+5. Keep the tone authoritative, professional, and B2B-focused. DO NOT sound like generic AI.
 
 Output strictly in JSON format with these keys:
 "body_html" (the full HTML article),
@@ -74,23 +74,35 @@ article_data = json.loads(response.choices[0].message.content)
 body_html = article_data["body_html"]
 
 # ==========================================
-# 4. INJECT INTERNAL LINKS (RULE 3)
+# 4. INJECT DESIGNED INTERNAL LINKS WIDGET
 # ==========================================
-print("Injecting internal links...")
-# Pick 2 random featured posts
+print("Injecting designed internal links...")
 selected_links = random.sample(featured_posts, 2)
+
+# Custom CSS Grid Widget for eCommerce and So
 internal_linking_html = f"""
-<hr style="border-top: 2px solid #0073e6; margin-top: 40px; margin-bottom: 20px;">
-<h3>More eCommerce Strategies You Might Like:</h3>
-<ul>
-  <li><strong><a href="{selected_links[0]['url']}" target="_blank">{selected_links[0]['title']}</a></strong>: {selected_links[0]['description']}</li>
-  <li><strong><a href="{selected_links[1]['url']}" target="_blank">{selected_links[1]['title']}</a></strong>: {selected_links[1]['description']}</li>
-</ul>
-<br>
+<div style="background-color: #f8f9fa; padding: 30px; border-radius: 12px; margin: 40px 0; font-family: sans-serif;">
+    <h3 style="text-align: center; color: #111; margin-bottom: 25px; font-size: 24px; margin-top:0;">🚀 Recommended For You</h3>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+        <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 5px solid #0073e6;">
+            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{selected_links[0]['url']}" target="_blank" style="color: #222; text-decoration: none;">{selected_links[0]['title']}</a></h4>
+            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{selected_links[0]['description']}</p>
+            <a href="{selected_links[0]['url']}" target="_blank" style="display: inline-block; color: #0073e6; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
+        </div>
+        <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 5px solid #00e673;">
+            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{selected_links[1]['url']}" target="_blank" style="color: #222; text-decoration: none;">{selected_links[1]['title']}</a></h4>
+            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{selected_links[1]['description']}</p>
+            <a href="{selected_links[1]['url']}" target="_blank" style="display: inline-block; color: #00e673; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
+        </div>
+    </div>
+</div>
 """
-# Attach links just above the FAQ if possible, or at the very bottom
-if "<h3>FAQ" in body_html or "<h3>Frequently Asked Questions" in body_html:
+
+# Attach links just above the FAQ
+if "<h3>FAQ" in body_html:
     body_html = body_html.replace("<h3>FAQ", internal_linking_html + "<h3>FAQ")
+elif "<h3>Frequently Asked Questions" in body_html:
+    body_html = body_html.replace("<h3>Frequently Asked Questions", internal_linking_html + "<h3>Frequently Asked Questions")
 else:
     body_html += internal_linking_html
 
@@ -114,7 +126,6 @@ def generate_branded_image(text):
     except:
         font = ImageFont.load_default()
 
-    # Simple text wrap and center
     words = text.upper().split(' ')
     lines, current_line = [], ""
     for word in words:
@@ -159,9 +170,8 @@ payload = {
 res = requests.post(url, headers=headers, json=payload)
 if res.status_code == 201:
     print(f"✅ Success! Article Published.")
-    # ONLY update the JSON file if Shopify successfully published it
     with open("pending_posts.json", "w") as f:
         json.dump(pending_posts, f, indent=2)
 else:
     print(f"❌ Error publishing to Shopify: {res.text}")
-    exit(1) # Crash the script so GitHub knows it failed and doesn't delete the post
+    exit(1)
