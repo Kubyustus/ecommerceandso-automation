@@ -1,176 +1,188 @@
 [
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Advanced Inventory Management: The Power of Stocky",
-    "short_name_for_image": "STOCKY",
-    "topic_summary": "Discuss the benefits of using Stocky for precise inventory management and the impact on B2B supply chain efficiency."
+    "title": "UpPromote Affiliate Marketing App for Shopify: Driving Success Through Partnerships",
+    "short_name_for_image": "UPPROMOTE",
+    "topic_summary": "Focus on UpPromote's features for creating and managing successful affiliate programs that enhance Shopify store growth through partnership marketing."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Boosting Global Sales with Langify's Multi-Language Capabilities",
-    "short_name_for_image": "LANGIFY",
-    "topic_summary": "Analyze how Langify's app enables businesses to capture international markets by offering multi-language support."
+    "title": "Judge.me Product Reviews App: Building Trust and Credibility in Shopify Stores",
+    "short_name_for_image": "JUDGE ME",
+    "topic_summary": "Examine how the Judge.me app helps Shopify merchants increase customer trust and sales through authentic, user-generated content."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Smart Email Flows: Klaviyo Strategies for Shopify Growth",
+    "title": "Refersion Affiliate Tracking: Optimizing Your Shopify Influencer Strategy",
+    "short_name_for_image": "REFERSION",
+    "topic_summary": "Explore Refersion's tracking capabilities and best practices for managing influencer and affiliate programs on Shopify."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Shopify QuickBooks Integration: Streamlining Your Accounting for Efficiency and Accuracy",
+    "short_name_for_image": "QUICKBOOKS",
+    "topic_summary": "Discuss the benefits and process of integrating QuickBooks with Shopify to enhance financial management and accounting accuracy."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Omnisend's Evolution in Email Marketing Automation for Shopify",
+    "short_name_for_image": "OMNISEND",
+    "topic_summary": "Analyze Omnisend's key features and advanced automation capabilities designed to improve Shopify email marketing campaigns."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Klaviyo Email Marketing Strategies for B2B Shopify Stores",
     "short_name_for_image": "KLAVIYO",
-    "topic_summary": "Highlight how Klaviyo integrates with Shopify to automate personalized email marketing for enhanced customer engagement."
+    "topic_summary": "Focus on leveraging Klaviyo's data-driven email marketing tools to personalize and optimize campaigns specifically for B2B niches."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Augmenting Product Pages with Shogun Page Builder",
-    "short_name_for_image": "SHOGUN",
-    "topic_summary": "Showcase the features of Shogun, emphasizing its ability to create custom Shopify product pages that drive B2B sales."
+    "title": "Boost Sales with Shopify POS Integration: The Complete Guide",
+    "short_name_for_image": "POS INTEGRATION",
+    "topic_summary": "Provide a comprehensive guide on integrating POS systems with Shopify to enhance customer in-store and online sales experiences."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Maximizing SEO Results with the Plug in SEO App",
+    "title": "SEO Manager for Shopify: Mastering On-Page SEO Optimization",
+    "short_name_for_image": "SEO MANAGER",
+    "topic_summary": "Detail the features of SEO Manager for effective on-page SEO practices that improve Shopify store visibility."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Spocket for Shopify: Transforming Your Dropshipping Business",
+    "short_name_for_image": "SPOCKET",
+    "topic_summary": "Evaluate Spocket\u2019s features for efficient dropshipping and product sourcing to scale Shopify store operations."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Explore Oberlo's Role in Streamlining Product Sourcing for Shopify Merchants",
+    "short_name_for_image": "OBERLO",
+    "topic_summary": "An in-depth look at how Oberlo helps Shopify merchants source and manage products efficiently for their online stores."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Plug in SEO: Your Guide to Ecommerce Search Success on Shopify",
     "short_name_for_image": "PLUG IN SEO",
-    "topic_summary": "Detail how to leverage the Plug in SEO app to improve search engine visibility for B2B eCommerce websites."
+    "topic_summary": "Outline the SEO enhancement benefits and practical application tips for using the Plug in SEO app with Shopify stores."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Optimizing Site Search with Algolia for Enhanced User Experiences",
-    "short_name_for_image": "ALGOLIA",
-    "topic_summary": "Explain how Algolia app's site search features can vastly improve user experiences on Shopify stores, particularly for B2B clients."
+    "title": "Shogun Landing Page Builder: Creating High-Converting Pages on Shopify",
+    "short_name_for_image": "SHOGUN",
+    "topic_summary": "Delve into the page-building features of Shogun and its potential to increase conversion rates through custom Shopify landing pages."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Navigating Global Transactions: Shopify Markets Simplified",
-    "short_name_for_image": "SHOPIFY MARKETS",
-    "topic_summary": "Discuss the functionalities of Shopify Markets and its effectiveness in streamlining cross-border eCommerce transactions."
+    "title": "Maximize Product Discoverability with Smart Search & Filter",
+    "short_name_for_image": "SMART SEARCH & FILTER",
+    "topic_summary": "Discuss how Smart Search & Filter enhances the user experience by improving product search and navigation on Shopify."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "B2B Checkout Optimization with Shopify Flow Automation",
-    "short_name_for_image": "SHOPIFY FLOW",
-    "topic_summary": "Focus on how Shopify Flow's automated processes can enhance the checkout experience for B2B clients."
+    "title": "Privy\u2019s Role in Shopify Pop-Ups for Boosting Email List Growth",
+    "short_name_for_image": "PRIVY",
+    "topic_summary": "Explore how Privy\u2019s pop-up tools can be effectively employed on Shopify to capture leads and grow email subscriptions."
   },
   {
     "target_blog": "Shopify Recommendations",
-    "title": "Understanding Wholesale Pricing with Bold Custom Pricing",
-    "short_name_for_image": "BOLD CUSTOM PRICING",
-    "topic_summary": "Explore the capabilities of Bold Custom Pricing in setting dynamic pricing models for B2B transactions on Shopify."
-  },
-  {
-    "target_blog": "Shopify Recommendations",
-    "title": "Integrating SMS Marketing: Postscript's Role in Shopify",
-    "short_name_for_image": "POSTSCRIPT",
-    "topic_summary": "Analyze the integration of Postscript for SMS marketing solutions within Shopify to boost direct communication with B2B clients."
-  },
-  {
-    "target_blog": "Shopify Recommendations",
-    "title": "Managing B2B Orders with Order Printer Pro App",
-    "short_name_for_image": "ORDER PRINTER PRO",
-    "topic_summary": "Detail how Order Printer Pro simplifies invoicing and paperwork for B2B Shopify transactions."
-  },
-  {
-    "target_blog": "Shopify Recommendations",
-    "title": "The Importance of Social Proof with Yotpo for Shopify",
-    "short_name_for_image": "YOTPO",
-    "topic_summary": "Examine how Yotpo facilitates enhanced social proof through reviews and visual user content on Shopify stores."
-  },
-  {
-    "target_blog": "Shopify Recommendations",
-    "title": "Unpacking Multi-Channel Shopify Solutions with ChannelAdvisor",
-    "short_name_for_image": "CHANNELADVISOR",
-    "topic_summary": "Present ChannelAdvisor's framework for managing multi-channel sales and stock synchronization on Shopify."
-  },
-  {
-    "target_blog": "Shopify Recommendations",
-    "title": "Shopify Fraud Protection: Insights from the NoFraud App",
-    "short_name_for_image": "NOFRAUD",
-    "topic_summary": "Explain how NoFraud provides crucial fraud prevention mechanisms for B2B transactions on Shopify."
+    "title": "PageFly Advanced Builder: Crafting Unique Experiences on Shopify",
+    "short_name_for_image": "PAGEFLY",
+    "topic_summary": "Highlight PageFly's customizable layouts for crafting unique online shopping experiences that increase engagement and sales."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Unlocking B2B PPC Success: New Geotargeting Strategies",
-    "short_name_for_image": "PPC STRATEGY",
-    "topic_summary": "Discuss cutting-edge geotargeting strategies in PPC campaigns to reach potential B2B clients more effectively."
+    "title": "The Future of PPC in eCommerce: Trends and Predictions for 2024",
+    "short_name_for_image": "PPC TRENDS",
+    "topic_summary": "Predict the shifts and advancements in PPC strategies that eCommerce businesses must adopt to stay competitive in 2024."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Leveraging AI for Smarter Product Recommendations in eCommerce",
-    "short_name_for_image": "AI PRODUCT RECS",
-    "topic_summary": "Explore AI-powered tools that personalize product recommendations, enhancing customer satisfaction and conversion rates."
+    "title": "Leveraging AI Automations for eCommerce Personalization at Scale",
+    "short_name_for_image": "AI PERSONALIZATION",
+    "topic_summary": "Examine the role of AI in automating personalized marketing efforts to enhance customer experience and conversion rates in eCommerce."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Email Automation with Precision: Advancements in AI-Driven Campaigns",
-    "short_name_for_image": "AI EMAIL",
-    "topic_summary": "Examine how AI advancements are refining email marketing automation for B2B eCommerce businesses."
+    "title": "Email Marketing Segmentation Strategies for Ecommerce Success",
+    "short_name_for_image": "EMAIL SEGMENTATION",
+    "topic_summary": "Focus on cutting-edge segmentation tactics to improve customer engagement and response rates through tailored email marketing campaigns."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Maximizing Conversion Rates with Heatmap Analysis",
-    "short_name_for_image": "HEATMAPS",
-    "topic_summary": "Detail how heatmap analytics tools can be used for improving user experience and boosting conversion rates in eCommerce."
+    "title": "A/B Testing Masterclass: Optimizing eCommerce Conversion Rates",
+    "short_name_for_image": "A/B TESTING",
+    "topic_summary": "Provide an in-depth guide on conducting A/B tests to fine-tune elements on eCommerce sites and improve conversion rates."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "The Role of Chatbots in Enhancing B2B Customer Service",
+    "title": "Crafting an Effective eCommerce Content Strategy for SEO",
+    "short_name_for_image": "SEO CONTENT STRATEGY",
+    "topic_summary": "Offer insights into creating a robust content strategy that boosts SEO rankings and attracts more organic traffic to eCommerce websites."
+  },
+  {
+    "target_blog": "eCommerce and So",
+    "title": "Key Features of Successful B2B eCommerce Platforms in 2024",
+    "short_name_for_image": "B2B PLATFORMS",
+    "topic_summary": "Evaluate the essential features and innovations leading B2B eCommerce platforms are integrating to meet 2024 expectations."
+  },
+  {
+    "target_blog": "eCommerce and So",
+    "title": "Voice Search Optimization: eCommerce\u2019s Next Frontier",
+    "short_name_for_image": "VOICE SEARCH",
+    "topic_summary": "Discuss strategies and tools essential for optimizing eCommerce sites for voice search to capture emerging consumer trends."
+  },
+  {
+    "target_blog": "eCommerce and So",
+    "title": "Integrating Chatbots into eCommerce Strategies: Enhancing Customer Interaction",
     "short_name_for_image": "CHATBOTS",
-    "topic_summary": "Investigate the impact of chatbot technology in streamlining customer service for B2B eCommerce platforms."
+    "topic_summary": "Analyze how advanced chatbot technologies are transforming customer service and increasing sales efficiency in eCommerce."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Advanced CRM Integrations: Bridging Sales and Marketing Gaps",
-    "short_name_for_image": "CRM INTEGRATION",
-    "topic_summary": "Discuss the necessity of robust CRM integrations for aligning sales and marketing in B2B eCommerce."
+    "title": "Omnichannel Marketing for eCommerce: Bridging Online and Offline",
+    "short_name_for_image": "OMNICHANNEL",
+    "topic_summary": "Explore effective omnichannel strategies for providing a cohesive shopping experience across online and offline touchpoints."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "The Evolution of Mobile Commerce: Preparing for the Future",
-    "short_name_for_image": "MOBILE COMMERCE",
-    "topic_summary": "Analyze the latest trends in mobile commerce and their implications for future eCommerce strategies."
+    "title": "Maximizing ROI with Data-Driven eCommerce Advertising",
+    "short_name_for_image": "DATA-DRIVEN ADS",
+    "topic_summary": "Detail the techniques for using customer data analytics to refine eCommerce advertising strategies and improve ROI."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Enabling Augmented Reality Shopping Experiences in B2B Environments",
-    "short_name_for_image": "AR SHOPPING",
-    "topic_summary": "Explore the possibilities of using augmented reality to revolutionize the shopping experiences for B2B clients."
+    "title": "How Blockchain Technology is Disrupting eCommerce Logistics",
+    "short_name_for_image": "BLOCKCHAIN LOGISTICS",
+    "topic_summary": "Examine the impact of blockchain technology on enhancing transparency, security, and efficiency in eCommerce logistics."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "B2B Loyalty Programs: Crafting Strategies for Long-Term Engagement",
-    "short_name_for_image": "LOYALTY PROGRAMS",
-    "topic_summary": "Explore effective strategies for designing B2B loyalty programs to nurture long-term client relationships."
+    "title": "The Role of AR and VR in Transforming eCommerce Customer Experiences",
+    "short_name_for_image": "AR VR",
+    "topic_summary": "Focus on how virtual and augmented reality technologies are revolutionizing product demonstrations and experiences in eCommerce."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Web Personalization Techniques for Enhancing B2B User Experience",
-    "short_name_for_image": "PERSONALIZATION",
-    "topic_summary": "Detail various web personalization strategies for tailoring the online experience to B2B customer needs."
+    "title": "Crafting High-Impact Influencer Campaigns for eCommerce Brands",
+    "short_name_for_image": "INFLUENCER CAMPAIGNS",
+    "topic_summary": "Provide a detailed guide on selecting and collaborating with influencers to create impactful marketing campaigns in the eCommerce industry."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Streamlining Supply Chain Operations with AI Tools",
-    "short_name_for_image": "AI SUPPLY CHAIN",
-    "topic_summary": "Investigate AI-based solutions for optimizing supply chain processes in B2B eCommerce sectors."
+    "title": "The Importance of User-Generated Content in eCommerce Marketing",
+    "short_name_for_image": "USER-GENERATED CONTENT",
+    "topic_summary": "Discuss the strategies for leveraging user-generated content to enhance authenticity and customer trust in eCommerce marketing."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Using Blockchain for Secure, Transparent B2B Transactions",
-    "short_name_for_image": "BLOCKCHAIN",
-    "topic_summary": "Examine how blockchain technology can enhance transaction security and transparency in B2B eCommerce."
+    "title": "Cybersecurity Best Practices for Protecting eCommerce Platforms",
+    "short_name_for_image": "ECOMMERCE CYBERSECURITY",
+    "topic_summary": "Analyze essential cybersecurity practices that keep eCommerce platforms secure against fraud and data breaches."
   },
   {
     "target_blog": "eCommerce and So",
-    "title": "Exploring IoT Solutions for Future-Ready B2B eCommerce",
-    "short_name_for_image": "IOT SOLUTIONS",
-    "topic_summary": "Discuss Internet of Things applications in B2B eCommerce and how they can drive innovative service offerings."
-  },
-  {
-    "target_blog": "eCommerce and So",
-    "title": "The Competitive Edge of AI in Dynamic Pricing Strategies",
-    "short_name_for_image": "AI PRICING",
-    "topic_summary": "Analyze the role of AI in developing dynamic pricing models that offer competitive advantages in eCommerce."
-  },
-  {
-    "target_blog": "eCommerce and So",
-    "title": "The Impact of 5G on the eCommerce Landscape",
-    "short_name_for_image": "5G IMPACT",
-    "topic_summary": "Explore how 5G technology will redefine eCommerce practices by providing faster and more stable connections."
+    "title": "Predictive Analytics in eCommerce: Forecasting Consumer Trends",
+    "short_name_for_image": "PREDICTIVE ANALYTICS",
+    "topic_summary": "Explore the use of predictive analytics tools to anticipate market trends and consumer behaviors in the eCommerce space."
   }
 ]
