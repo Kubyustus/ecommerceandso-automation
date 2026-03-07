@@ -1,0 +1,46 @@
+name: 🚀 Publish Article to Shopify
+
+on:
+  schedule:
+    # Runs at 14:00 UTC (10:00 AM EST) every Tuesday and Thursday
+    - cron: '0 14 * * 2,4'
+  workflow_dispatch: # Allows you to run it manually with a button click
+
+permissions:
+  contents: write # Allows the bot to delete published titles from the JSON queue
+
+jobs:
+  publish_post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests openai Pillow
+
+      - name: Run Core Content Engine
+        env:
+          SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+          SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
+          BLOG_ID_RECOMMENDATIONS: ${{ secrets.BLOG_ID_RECOMMENDATIONS }}
+          BLOG_ID_ECOMMERCE: ${{ secrets.BLOG_ID_ECOMMERCE }}
+        run: python publish_article.py
+
+      - name: Commit Updated Queue
+        run: |
+          git config --global user.name "GitHub Automation Bot"
+          git config --global user.email "action@github.com"
+          git add pending_posts.json
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Dequeue published article"
+          git push
