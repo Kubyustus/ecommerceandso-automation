@@ -44,6 +44,15 @@ topic_summary = current_post["topic_summary"]
 print(f"🎯 Target Blog: {target_blog_name}")
 print(f"📝 Writing Article: {title}")
 
+# Select 4 random internal links (2 for context, 2 for the widget)
+num_links = min(4, len(featured_posts))
+selected_links = random.sample(featured_posts, num_links)
+
+contextual_link_1 = selected_links[0]
+contextual_link_2 = selected_links[1]
+widget_link_1 = selected_links[2] if num_links > 2 else selected_links[0]
+widget_link_2 = selected_links[3] if num_links > 3 else selected_links[1]
+
 # ==========================================
 # 3. GENERATE GEO-OPTIMIZED CONTENT
 # ==========================================
@@ -58,6 +67,9 @@ STRICT GEO/SEO RULES:
 3. Use semantic HTML (<h2>, <h3>, <p>, <ul>, <strong>). Format subheadings as questions where relevant.
 4. Add a comprehensive FAQ widget at the very bottom using <h3> tags for the questions. You MUST generate exactly 6 to 8 Frequently Asked Questions.
 5. Keep the tone authoritative, professional, and B2B-focused. DO NOT sound like generic AI.
+6. CONTEXTUAL INTERNAL LINKS: You MUST seamlessly integrate the following 2 internal links into the body of the article using standard anchor tags (<a href="...">...</a>). The anchor text for each link MUST be a highly relevant, SEO/GEO competitive keyword or phrase. Do not force them; make them flow naturally.
+   - Link 1 URL: {contextual_link_1['url']} (Topic: {contextual_link_1['title']})
+   - Link 2 URL: {contextual_link_2['url']} (Topic: {contextual_link_2['title']})
 
 Output strictly in JSON format with these keys:
 "body_html" (the full HTML article),
@@ -77,7 +89,6 @@ body_html = article_data["body_html"]
 # 4. INJECT DESIGNED INTERNAL LINKS WIDGET
 # ==========================================
 print("Injecting designed internal links...")
-selected_links = random.sample(featured_posts, 2)
 
 # Custom CSS Grid Widget for eCommerce and So
 internal_linking_html = f"""
@@ -85,14 +96,14 @@ internal_linking_html = f"""
     <h3 style="text-align: center; color: #111; margin-bottom: 25px; font-size: 24px; margin-top:0;">🚀 Recommended For You</h3>
     <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
         <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 5px solid #0073e6;">
-            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{selected_links[0]['url']}" target="_blank" style="color: #222; text-decoration: none;">{selected_links[0]['title']}</a></h4>
-            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{selected_links[0]['description']}</p>
-            <a href="{selected_links[0]['url']}" target="_blank" style="display: inline-block; color: #0073e6; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
+            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{widget_link_1['url']}" target="_blank" style="color: #222; text-decoration: none;">{widget_link_1['title']}</a></h4>
+            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{widget_link_1['description']}</p>
+            <a href="{widget_link_1['url']}" target="_blank" style="display: inline-block; color: #0073e6; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
         </div>
         <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-top: 5px solid #00e673;">
-            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{selected_links[1]['url']}" target="_blank" style="color: #222; text-decoration: none;">{selected_links[1]['title']}</a></h4>
-            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{selected_links[1]['description']}</p>
-            <a href="{selected_links[1]['url']}" target="_blank" style="display: inline-block; color: #00e673; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
+            <h4 style="margin-top: 0; font-size: 18px; line-height: 1.3;"><a href="{widget_link_2['url']}" target="_blank" style="color: #222; text-decoration: none;">{widget_link_2['title']}</a></h4>
+            <p style="font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 15px;">{widget_link_2['description']}</p>
+            <a href="{widget_link_2['url']}" target="_blank" style="display: inline-block; color: #00e673; font-weight: 600; text-decoration: none; font-size: 14px;">Read Article &rarr;</a>
         </div>
     </div>
 </div>
