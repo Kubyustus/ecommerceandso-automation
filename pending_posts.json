@@ -1,4 +1,40 @@
 [
+   {
+    "target_blog": "eCommerce and So",
+    "title": "The Best SEO and GEO Tools for eCommerce Growth",
+    "short_name_for_image": "SEO GEO TOOLS",
+    "topic_summary": "Write a comprehensive guide on the best SEO and GEO tools for eCommerce. You MUST cover SEMRUSH, Ahrefs, Mangools, Moz, and SE Ranking. Provide a detailed description for each tool, and you MUST include an external link to each tool's official website using the target=\"_blank\" attribute."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Semrush Shopify SEO Guide: Optimizing Your Store for Maximum Traffic",
+    "short_name_for_image": "SEMRUSH",
+    "topic_summary": "Review how Semrush benefits Shopify stores, focusing on advanced keyword research for product pages, competitor analysis, and technical SEO audits for eCommerce."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Ahrefs Shopify Strategy: Enhancing Your eCommerce SEO and Backlinks",
+    "short_name_for_image": "AHREFS",
+    "topic_summary": "Explore how Shopify merchants can use Ahrefs to build authoritative backlinks, audit their store's technical SEO, and track high-converting eCommerce keyword rankings effectively."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Mangools SEO for Shopify: A User-Friendly Toolkit for Merchants",
+    "short_name_for_image": "MANGOOLS",
+    "topic_summary": "Discuss the benefits of using Mangools for Shopify SEO, highlighting its ease of use for beginners, leveraging KWFinder for long-tail product keywords, and simple SERP analysis."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "Moz Pro Shopify Integration: Mastering Domain Authority and Search Visibility",
+    "short_name_for_image": "MOZ",
+    "topic_summary": "Analyze how Moz Pro helps Shopify store owners track local and global search visibility, improve their store's Domain Authority, and optimize collection pages for better rankings."
+  },
+  {
+    "target_blog": "Shopify Recommendations",
+    "title": "SE Ranking for Shopify: The All-in-One SEO Software for eCommerce",
+    "short_name_for_image": "SE RANKING",
+    "topic_summary": "Review SE Ranking as a cost-effective, all-in-one SEO solution for Shopify, focusing on accurate rank tracking, automated website audits, and built-in marketing planning."
+  },
   {
     "target_blog": "Shopify Recommendations",
     "title": "Shogun Landing Page Builder: Creating High-Converting Pages on Shopify",
